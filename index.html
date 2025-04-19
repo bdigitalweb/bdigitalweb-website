@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BDigitalWeb - Automations with AI</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <!-- Lottie Player -->
+  <script src="https://lottiefiles.com/free-animation/actable-ai-landing-page-animation-pntI78uP4E"></script>
+  <!-- Chatbase Embed -->
+  <script>
+    (function(){
+      if(!window.chatbase||window.chatbase("getState")!="initialized"){
+        window.chatbase=(...args)=>{if(!window.chatbase.q)window.chatbase.q=[];window.chatbase.q.push(args)};
+        window.chatbase=new Proxy(window.chatbase,{get(t,p){if(p==="q")return t.q;return(...a)=>t(p,...a)}});
+      }
+      function onLoad(){
+        var s=document.createElement("script");
+        s.src="https://www.chatbase.co/embed.min.js";
+        s.id="BHxMnkL7MHogMbfg-3NeH";
+        document.body.appendChild(s);
+      }
+      if(document.readyState==="complete") onLoad(); else window.addEventListener("load",onLoad);
+    })();
+  </script>
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; color: #eadede; background: #4554aa; }
+    header { background-color: #4768eb; color: rgb(14, 14, 14); padding: 20px 40px; display: flex; justify-content: space-between; align-items: center; }
+    header h1 { margin: 0; font-size: 1.5rem; }
+    nav a { color: rgb(6, 6, 6); text-decoration: none; margin-left: 20px; font-weight: 500; }
+    .hero { position: relative; overflow: hidden; }
+    lottie-player { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0; }
+    .hero-content { position: relative; z-index: 1; text-align: center; padding: 100px 20px; background: rgba(139, 160, 219, 0.05); color: white; }
+    .hero h2 { font-size: 2.5rem; margin-bottom: 20px; }
+    .hero p { font-size: 1.2rem; margin-bottom: 30px; }
+    .hero button { background-color: white; color: #5e3ef3; border: none; padding: 15px 30px; font-size: 1rem; border-radius: 8px; cursor: pointer; font-weight: bold; }
+    .section { padding: 80px 20px; max-width: 900px; margin: auto; }
+    .section h3 { font-size: 2rem; text-align: center; margin-bottom: 40px; }
+    .features { display: flex; flex-wrap: wrap; gap: 30px; justify-content: center; }
+    .feature { background-color: rgb(10, 10, 10); padding: 30px; border-radius: 12px; box-shadow: 0 4px 8px rgba(139, 160, 219, 0.05); width: 280px; text-align: center; }
+    .feature lottie-player { margin-bottom: 15px; }
+    .section#contact p a { color: #3c3949; text-decoration: underline; }
+    footer { background-color: #253162; color: white; text-align: center; padding: 40px 20px; }
+    #open-chat { position: fixed; bottom: 20px; right: 20px; background: #5e3ef3; color: white; padding: 15px 20px; border-radius: 50px; font-weight: bold; cursor: pointer; box-shadow: 0 4px 8px rgba(0,0,0,0.2); z-index: 1000; border: none; }
+    #chatbot-container { display: none; position: fixed; bottom: 20px; right: 20px; width: 360px; height: 480px; background: white; border-radius: 12px; box-shadow: 0 4px 16px rgba(0,0,0,0.2); z-index: 1001; }
+    #chatbot-close { position: absolute; top: 8px; right: 8px; background: none; border: none; font-size: 1.2rem; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>BDigitalWeb</h1>
+    <nav>
+      <a href="#services" data-translate="menu_services">Services</a>
+      <a href="#benefits" data-translate="menu_benefits">Benefits</a>
+      <a href="#contact" data-translate="menu_contact">Contact</a>
+      <select id="lang-switcher" style="margin-left:20px;padding:5px;border-radius:6px;background:#2a2f45;color:white;border:none;">
+        <option value="en">🇬🇧 EN</option>
+        <option value="pt">🇵🇹 PT</option>
+        <option value="fr">🇫🇷 FR</option>
+        <option value="nl">🇳🇱 NL</option>
+      </select>
+    </nav>
+  </header>
+  <section class="hero">
+    <lottie-player src="https://lottie.host/b38f0902-6a13-4e60-b1b3-ff50e83f37b7/PrQXzujgE3.json" background="yellow" speed="1" loop autoplay></lottie-player>
+    <div class="hero-content">
+      <h2 data-translate="hero_title">Boost your business with AI-powered automations</h2>
+      <p data-translate="hero_subtitle">We help small businesses automate tasks using AI, Make.com, ChatGPT, and more.</p>
+      <button onclick="window.location.href='mailto:bdigitalwebinfo@gmail.com?subject=Free Consultation Request'" data-translate="hero_button">Get a Free Consultation</button>
+    </div>
+  </section>
+  <section id="services" class="section">
+    <h3 data-translate="services_title">Our Services</h3>
+    <div class="features">
+      <div class="feature">
+        <lottie-player src="https://lottie.host/92e8e106-c5df-4e65-ae97-3c846d5a92c0/JbXzA9VYKH.json" background="transparent" speed="1" style="width:100px;height:100px;" loop autoplay></lottie-player>
+        <div data-translate="services_1">Custom automation setups using Make.com and Zapier</div>
+      </div>
+      <div class="feature">
+        <lottie-player src="https://lottie.host/342f511b-3cd0-419b-bcbf-c367ec7906d6/zGzXYLOH7S.json" background="transparent" speed="1" style="width:100px;height:100px;" loop autoplay></lottie-player>
+        <div data-translate="services_2">AI-powered chatbots for websites and apps</div>
+      </div>
+      <div class="feature">
+        <lottie-player src="https://lottie.host/2a01b2f4-c02e-43ed-880f-ea3cd1916ab6/RBOIBKr2uG.json" background="transparent" speed="1" style="width:100px;height:100px;" loop autoplay></lottie-player>
+        <div data-translate="services_3">Internal workflow automation for small businesses</div>
+      </div>
+    </div>
+  </section>
+  <section id="benefits" class="section">
+    <h3 data-translate="benefits_title">Benefits of Working with Us</h3>
+    <div class="features">
+      <div class="feature">
+        <lottie-player src="https://lottie.host/b2060f23-b1c8-4bb9-8047-c145f68911cc/GMZcZbKMA5.json" background="transparent" speed="1" style="width:100px;height:100px;" loop autoplay></lottie-player>
+        <div data-translate="benefits_1">Save time and reduce manual tasks</div>
+      </div>
+      <div class="feature">
+        <lottie-player src="https://lottie.host/590f849d-3133-41a7-9b07-8f231ca380c3/tbbqW4cAnQ.json" background="transparent" speed="1" style="width:100px;height:100px;" loop autoplay></lottie-player>
+        <div data-translate="benefits_2">Affordable solutions tailored to your needs</div>
+      </div>
+      <div class="feature">
+        <lottie-player src="https://lottie.host/df5249c3-d37e-487b-a16a-38c64925e9f3/q2rCR1zCem.json" background="transparent" speed="1" style="width:100px;height:100px;" loop autoplay></lottie-player>
+        <div data-translate="benefits_3">Multilingual support and international experience</div>
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="section">
+    <h3 data-translate="contact_title">Contact Us</h3>
+    <p data-translate="contact_description">For inquiries, email us at <a href="mailto:bdigitalwebinfo@gmail.com">bdigitalwebinfo@gmail.com</a>.</p>
+  </section>
+  <footer>
+    <p>&copy; 2025 BDigitalWeb. All rights reserved.</p>
+  </footer>
+  <script>
+    document.getElementById("lang-switcher").addEventListener("change", function () {
+      const lang = this.value;
+      localStorage.setItem("preferredLang", lang);
+      location.reload();
+    });
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const preferredLang = localStorage.getItem("preferredLang") || "en";
+      document.getElementById("lang-switcher").value = preferredLang;
+
+      fetch(`https://bdigitalweb-files.web.app/lang/${preferredLang}.json`)
+        .then(res => res.json())
+        .then(data => {
+          document.querySelectorAll("[data-translate]").forEach(el => {
+            const key = el.getAttribute("data-translate");
+            if (data[key]) el.innerHTML = data[key];
+          });
+        });
+    });
+  </script>
+</body>
+</html>
